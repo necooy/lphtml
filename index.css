@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.landing {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/casa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(164, 194, 119);
+    height: 130px;
+    animation: aparecer 0.5s ease-out;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-150px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header img { height: 120px; }
+
+.infos { display: flex; 
+    gap: 50px; 
+    margin-left: 35%;
+}
+
+.infos a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.agendar {
+    background: #696453;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s;
+    color: white;
+}
+
+.agendar:hover { background: #ffffff; color: #073e15; }
+
+.main-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.search-container { width: 100%; max-width: 850px; }
+
+.tabs { display: flex; gap: 5px; }
+
+.tab-btn {
+    margin-top: 15%;
+    padding: 12px 25px;
+    border: none;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-btn.active {
+    background: #fff;
+    color: #073e15;
+}
+
+.search-box {
+    background: white;
+    padding: 30px;
+    border-radius: 0 15px 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px;
+}
+
+.field-group { display: flex; flex-direction: column; gap: 5px; }
+
+.select-imobiliaria {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-buscar-main {
+    background: #a4d277ca;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    align-self: flex-end;
+}
+
+.contato {
+    background: #30c53f;
+    position: fixed;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
