@@ -53,20 +53,6 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.agendar {
-    background: #696453;
-    padding: 15px 30px;
-    border: none;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: 0.2s;
-    color: white;
-}
-
-.agendar:hover { background: #ffffff; color: #073e15; }
-
 .main-content {
     margin-top: 100px;
     display: flex;
@@ -134,4 +120,8 @@ body, html {
     bottom: 40px;
     font-size: 30px;
     cursor: pointer;
+    transition: 0.3s;
+}
+.contato:hover{
+    transform: scale(1.4);
 }
